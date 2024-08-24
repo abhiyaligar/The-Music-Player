@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+}
+
+.left {
+    width: 20%;
+    height: 100vh;
+    background-color: #232B2B;
+    color: black;
+}
+
+.left .logo {
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.left .logo img {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    margin-top: 10px;
+
+
+}
+
+.navbar div {
+    gap: 10px;
+    margin-left: 15px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: 6px;
+    align-items: center;
+}
+
+.playlist .head {
+    margin-left: 5px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.playlist .collection {
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 220px;
+    overflow: auto;
+}
+
+.playlist .collection ul li,
+a {
+    list-style: none;
+    text-decoration: none;
+    margin: 8px 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+
+.collection::-webkit-scrollbar {
+    width: 6px;
+    /* Width of the scrollbar */
+}
+
+.collection::-webkit-scrollbar-track {
+    background: none;
+    /* Dark background for the scrollbar track */
+    border-radius: 6px;
+    /* Rounded corners for the track */
+}
+
+.collection::-webkit-scrollbar-thumb {
+    background: rgb(121, 118, 118);
+    /* Dark grey color for the scrollbar thumb */
+    border-radius: 6px;
+    /* Rounded corners for the thumb */
+}
+
+.collection::-webkit-scrollbar-thumb:hover {
+    background: #777;
+    /* Lighter grey when hovering over the thumb */
+}
+
+.radio .head {
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.radio .rcoll ul li {
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right {
+    width: 80%;
+
+
+}
+
+.right .navright {
+    width: 100%;
+    height: 75px;
+    background-color: #353839;
+    display: flex;
+    align-items: center;
+
+}
+
+.right .navright .subleft ul {
+    display: flex;
+    gap: 10px;
+
+
+
+}
+
+.navright .subleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+
+}
+
+.right .navright .subleft ul li {
+    list-style: none;
+    margin: 15px 25px;
+
+}
+
+.subleft ul li a {
+    margin: 5px 10px;
+    color: white;
+}
+
+.subleft ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+
+.subright {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+
+
+}
+
+.subright .search {
+    display: flex;
+    width: 230px;
+    gap: 10px;
+    background-color: rgb(49, 49, 49);
+    align-items: center;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.search img {
+    width: 20px;
+    height: 20px;
+}
+
+.subright .search input {
+    width: 200px;
+    border-radius: 30px;
+    height: 30px;
+    background-color: rgb(49, 49, 49);
+    border: none;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+
+}
+
+.subright .search input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.search input:focus {
+    outline: 0;
+}
+
+.cardcontain {
+    width: 100%;
+    height: 250px;
+    background-color: #353839;
+    overflow: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+.head1 {
+    width: 100%;
+    background-color: #353839;
+    font-family: "Poppins", sans-serif;
+    color: white;
+
+}
+
+.head1 h1 {
+    margin-left: 15px;
+}
+
+.cardcontain .card {
+    margin-left: 15px;
+    margin-top: px;
+    width: 200px;
+    gap: 5px;
+    height: 250px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cardcontain .card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all .5s;
+
+}
+
+.cardcontain .card img:hover {
+    box-shadow: 2px 2px 10px;
+}
+
+/* .cardcontain .card .play{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 173px 100px;
+    
+} */
+
+
+
+.card h2 {
+    color: white;
+    width: auto;
+    height: auto;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* .cardcontain .card .play svg{
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #424242;
+
+} */
+
+.curalbum {
+    width: 40%;
+    height: 260px;
+    background-color: #444546;
+}
+
+.curalbum .album {
+    display: flex;
+    justify-content: center;
+}
+
+.curalbum h2 {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.curalbum .album img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.vidsong {
+    display: flex;
+}
+
+.songlist {
+    width: 60%;
+    height: 260px;
+    overflow-y: auto;
+    background-color: #353839;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.songlist ul {
+    font-size: 5px;
+    overflow: auto;
+    width: 300px;
+    scroll-behavior: smooth;
+}
+
+.songlist ul li img {
+    border-radius: 0;
+}
+
+.songlist ul li {
+    height: 31px;
+    font-family: "Poppins", sans-serif;
+    width: 260px;
+    list-style-type: decimal;
+    display: flex;
+    gap: 12px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 12px 5px;
+    font-size: 10px;
+    margin: 12px 0;
+    border-radius: 5px;
+}
+
+.songlist ul::-webkit-scrollbar {
+    width: 0;
+}
+
+.songlist ul li .info {
+    width: 50%;
+    padding: 0 35px;
+}
+
+.songlist ul li .image img {
+    width: 50px;
+    height: 50px;
+}
+
+.infotime {
+    height: 49px;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #424344;
+}
+
+.infotime .songinf {
+    display: flex;
+    margin-left: 15px;
+    margin-top: px;
+    color: white;
+    width: 375px;
+}
+
+.infotime .songbtn {
+    display: flex;
+    width: 332px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.infotime .votime {
+    width: 300px;
+    gap: 20px;
+    display: flex;
+}
+
+.infotime .votime .songtime {
+    margin-top: 5px;
+    width: 127px;
+}
+
+.infotime .votime .volume {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    gap: 10px;
+}
+.volume img{
+    color: white;
+    cursor: pointer;
+}
+.volume input {
+    margin-top: 5px;
+    width: 119px;
+}
+
+.mediaplayer {
+    width: 80%;
+    margin-bottom: -12px;
+    position: fixed;
+    display: flex;
+
+}
+
+.seekbar {
+    width: 98%;
+    height: 4px;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 38px;
+    margin: 6px;
+    background: white;
+    left: 0%;
+    cursor: pointer;
+
+}
+
+.seekbar .circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+
+}
+
+.hamburgur img{
+    width: 25px;
+    display: none;
+}
+
+
+
+.close img{
+    width: 25px;
+    display: none;
+
+}

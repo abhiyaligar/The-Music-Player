@@ -1,0 +1,153 @@
+@media(max-width: 1200px){
+    .body{
+        overflow: auto;
+    }
+    .left {
+        position: absolute;
+        left: -120%;
+        transition: all .3s;
+        z-index: 1;
+        width: 370px;
+        padding: 0%;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right .navright {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        background-color: black;
+
+    }
+
+    .right .navright .subleft{
+        width: 50%;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .right .navright .subleft ul {
+        display: flex;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .right .navright .subleft ul li{
+        margin: 0;
+        font-size: 5px;
+    }
+
+    .subleft ul li a{
+        font-size: 10px;
+    }
+
+    .right .navright .subright{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .subright .search input{
+        width: 125px;
+        height: 30px;
+        border-radius: 15px;
+
+    }
+
+    .head1{
+        margin-top: -50px ;
+    }
+
+    .songlist{
+        display: grid;
+        padding-top: 139px;
+        margin-bottom: 50px;
+        margin-left: -18px;
+        width: 1661vw;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .songlist ul li {
+        width: auto;
+        margin-left: 4px;
+
+    }
+    .curalbum{
+        left: -100%;
+        position: relative;
+    }
+
+    .cardcontain{
+        width: 100%;
+        height: 274px;
+        overflow-x: auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mediaplayer{
+        width: 100%;
+        height: 75px;
+        gap: 10px;
+
+    }
+    .mediaplayer .infotime{
+        height: 75px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .mediaplayer .seekbar{
+        top: -6px;
+        margin: 11px 0;
+    }
+
+    .mediaplayer .songinf{
+        width: 117px;
+    }
+
+    .mediaplayer .songbtn{
+        width: 167px;
+    }
+
+    .mediaplayer .songbtn img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .mediaplayer .songtime{
+        width: 92px;
+    }
+
+    .mediaplayer .votime .volume{
+        margin-right: 5px;
+    }
+    .hamburgur img{
+        display: block;
+    }
+    .close img{
+        display: block;
+    }
+    .close {
+        margin-left: 134px;
+    }
+}
